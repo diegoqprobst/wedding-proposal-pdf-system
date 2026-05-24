@@ -1,0 +1,80 @@
+################################################################
+#  VERA LUNE STUDIO  —  CLIENT INVESTMENT GUIDE
+#  Per-client data template
+#
+#  Fill every value to the right of the colon. Keep field
+#  labels and order unchanged. Lines beginning with "#" are
+#  comments and are ignored.
+#
+#  Hand the completed file back and a personalized
+#  investment_guide_<couple>.html will be regenerated.
+################################################################
+
+
+# ─── COUPLE ───────────────────────────────────────────────────
+COUPLE_FIRST_NAME:        Rivera
+COUPLE_SECOND_NAME:       Quinn
+COUPLE_LAST_NAME:                          # used for filename + small caps; optional
+COUPLE_PRONOUNS:          they / their     # used in the personal-touch sentence
+
+
+# ─── WEDDING ──────────────────────────────────────────────────
+WEDDING_DATE_LONG:        Fourteen June, Two Thousand & Twenty-Six   # spelled-out style for cover
+WEDDING_DATE_SHORT:       14 June 2026                              # used in stamps / footers
+WEDDING_YEAR_SPELLED:     Two Thousand & Twenty-Six
+WEDDING_VENUE:            The Marivelle
+WEDDING_CITY:             By the Coast
+
+
+# ─── PACKAGE ──────────────────────────────────────────────────
+# One of: Essential | Signature | Cinematic
+PACKAGE_NAME:             Signature
+INVESTMENT_TOTAL:         $ 18,500          # use a thin space and comma; gold serif treatment
+
+
+# ─── CUSTOM DELIVERABLES ──────────────────────────────────────
+# Up to six lines. These replace the default deliverables list
+# on Page 3 for the SELECTED package only. Leave blank to keep
+# the standard list.
+DELIVERABLE_1:            Full day coverage, lead & second photographer
+DELIVERABLE_2:            Pre-wedding portrait session
+DELIVERABLE_3:            Edited gallery, color & black-and-white
+DELIVERABLE_4:            Hand-bound fine-art album, 40 spreads
+DELIVERABLE_5:            Twelve archival prints, signed
+DELIVERABLE_6:            Three-minute highlight film
+
+
+# ─── PHOTOGRAPHER ─────────────────────────────────────────────
+PHOTOGRAPHER_ASSIGNED:    Vera Lune
+
+
+# ─── CONSULTATION NOTE ────────────────────────────────────────
+# A single sentence written in the studio's voice — added to
+# Page 6 above the contact details. Em-dashes welcome.
+PERSONAL_TOUCH_SENTENCE:  We were honored to spend the morning with you both at the studio — and we cannot wait to bring the same calm to your day.
+
+
+# ─── HERO IMAGE ───────────────────────────────────────────────
+# Either a URL, a project-relative file path, or a placeholder
+# label like [HERO PLACEHOLDER — couple at sunset].
+# A 16:9 cinematic crop is used; warm tones preferred.
+HERO_IMAGE:               [HERO PLACEHOLDER]
+
+
+# ─── ON-PAGE TESTIMONIAL (optional) ───────────────────────────
+# Leave blank to use the studio's default quote on Page 5.
+TESTIMONIAL_QUOTE:
+TESTIMONIAL_AUTHOR:
+TESTIMONIAL_VENUE:
+
+
+# ─── CONTACT (overrides only if filled) ───────────────────────
+STUDIO_CONTACT:           veralune.example/contact
+STUDIO_PHONE:             +1 · 555 · 0142
+STUDIO_WEB:               veralune.example
+STUDIO_INSTAGRAM:         @VeraLuneStudio
+
+
+################################################################
+#  END OF FILE
+################################################################

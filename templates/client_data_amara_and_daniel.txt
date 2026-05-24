@@ -1,0 +1,61 @@
+################################################################
+#  VERA LUNE STUDIO  —  CLIENT INVESTMENT GUIDE
+#  Filled for: Amara & Daniel  (sample / fictional)
+################################################################
+
+
+# ─── COUPLE ───────────────────────────────────────────────────
+COUPLE_FIRST_NAME:        Amara
+COUPLE_SECOND_NAME:       Daniel
+COUPLE_LAST_NAME:
+COUPLE_PRONOUNS:          they / their
+
+
+# ─── WEDDING ──────────────────────────────────────────────────
+WEDDING_DATE_LONG:        Twelve September, Two Thousand & Twenty-Six
+WEDDING_DATE_SHORT:       12 September 2026
+WEDDING_YEAR_SPELLED:     Two Thousand & Twenty-Six
+WEDDING_VENUE:            The Marivelle
+WEDDING_CITY:             By the Coast
+
+
+# ─── PACKAGE ──────────────────────────────────────────────────
+PACKAGE_NAME:             Cinematic
+INVESTMENT_TOTAL:         $ 12,000
+
+
+# ─── CUSTOM DELIVERABLES ──────────────────────────────────────
+DELIVERABLE_1:            Two photographers, ten-hour coverage
+DELIVERABLE_2:            Five hundred edited high-resolution images
+DELIVERABLE_3:            Highlight film, hand-graded
+DELIVERABLE_4:            Luxury fine-art album
+DELIVERABLE_5:            Online client gallery
+DELIVERABLE_6:
+
+
+# ─── PHOTOGRAPHER ─────────────────────────────────────────────
+PHOTOGRAPHER_ASSIGNED:    Vera Lune
+
+
+# ─── CONSULTATION NOTE ────────────────────────────────────────
+PERSONAL_TOUCH_SENTENCE:  Amara and Daniel — thank you for trusting us with the most important day of your lives.
+
+
+# ─── HERO IMAGE ───────────────────────────────────────────────
+HERO_IMAGE:               [HERO PLACEHOLDER]
+
+
+# ─── ON-PAGE TESTIMONIAL ──────────────────────────────────────
+TESTIMONIAL_QUOTE:
+TESTIMONIAL_AUTHOR:
+TESTIMONIAL_VENUE:
+
+
+# ─── CONTACT ─────────────────────────────────────────────────
+STUDIO_CONTACT:           veralune.example/contact
+STUDIO_PHONE:             +1 · 555 · 0142
+STUDIO_WEB:               veralune.example
+STUDIO_INSTAGRAM:         @VeraLuneStudio
+
+
+################################################################

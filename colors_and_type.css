@@ -1,0 +1,300 @@
+/* =========================================================
+   Vera Lune Studio — Design Tokens
+   Cinematic luxury. Editorial. Print-ready.
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Montserrat:wght@200;300;400;500;600&display=swap');
+
+:root {
+  /* ---------- Primary palette ---------- */
+  --vl-black:        #0A0A0A;   /* deep black — primary text, full-bleed framing */
+  --vl-charcoal:     #2C2C2C;   /* soft charcoal — secondary text */
+  --vl-gold:         #C9A96E;   /* champagne gold — accent only, used sparingly */
+  --vl-white:        #FAF8F5;   /* warm white — page background */
+
+  /* ---------- Extended neutrals (for editorial hierarchy) ---------- */
+  --vl-ink:          #1A1A1A;   /* near-black, slightly softer than --vl-black */
+  --vl-graphite:     #4A4A4A;   /* tertiary text, captions */
+  --vl-stone:        #8A8580;   /* muted metadata */
+  --vl-bone:         #F2EEE8;   /* warm off-white, subtle surface */
+  --vl-pearl:        #EDE7DD;   /* card / panel surface */
+
+  /* ---------- Gold scale (use champagne by default) ---------- */
+  --vl-gold-soft:    #D9BE8B;   /* hover/illuminated state */
+  --vl-gold-deep:    #A88652;   /* press / on warm white */
+  --vl-gold-shadow:  rgba(201, 169, 110, 0.25);
+
+  /* ---------- Semantic foreground / background ---------- */
+  --vl-fg-1:         var(--vl-black);     /* primary text */
+  --vl-fg-2:         var(--vl-charcoal);  /* secondary text */
+  --vl-fg-3:         var(--vl-graphite);  /* tertiary, captions */
+  --vl-fg-4:         var(--vl-stone);     /* metadata, faint */
+  --vl-fg-accent:    var(--vl-gold);
+  --vl-fg-on-dark:   var(--vl-white);
+
+  --vl-bg-page:      var(--vl-white);     /* default page */
+  --vl-bg-surface:   var(--vl-bone);      /* card / panel */
+  --vl-bg-deep:      var(--vl-black);     /* dark sections, full-bleed */
+
+  /* ---------- Rule lines (the gold thin line is signature) ---------- */
+  --vl-rule-hairline: 0.5px;
+  --vl-rule-thin:     1px;
+  --vl-rule-medium:   2px;
+  --vl-rule-color:    var(--vl-gold);
+  --vl-rule-neutral:  rgba(10, 10, 10, 0.12);
+  --vl-rule-on-dark:  rgba(250, 248, 245, 0.18);
+
+  /* ---------- Type families ---------- */
+  --vl-serif:   'Cormorant Garamond', 'Garamond', 'EB Garamond', Georgia, serif;
+  --vl-sans:    'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+
+  /* ---------- Type weights (intentional, sparse) ---------- */
+  --vl-weight-serif-light:    300;
+  --vl-weight-serif-regular:  400;
+  --vl-weight-serif-medium:   500;
+  --vl-weight-sans-extralight: 200;
+  --vl-weight-sans-light:      300;  /* body default */
+  --vl-weight-sans-regular:    400;
+  --vl-weight-sans-medium:     500;
+
+  /* ---------- Type scale (editorial — generous, large headlines) ---------- */
+  --vl-display:      clamp(56px, 8vw, 112px);   /* cover hero */
+  --vl-h1:           clamp(40px, 5vw, 72px);    /* section opener */
+  --vl-h2:           clamp(28px, 3.2vw, 44px);
+  --vl-h3:           20px;
+  --vl-h4:           16px;
+  --vl-body:         15px;
+  --vl-body-sm:      13px;
+  --vl-caption:      11px;
+  --vl-eyebrow:      10.5px;   /* small caps, tracked label */
+
+  /* ---------- Tracking ---------- */
+  --vl-track-display:   -0.015em;   /* tight on serif display */
+  --vl-track-heading:   -0.005em;
+  --vl-track-body:      0.005em;
+  --vl-track-eyebrow:   0.32em;     /* very wide, all-caps */
+  --vl-track-smallcaps: 0.18em;
+  --vl-track-button:    0.22em;
+
+  /* ---------- Leading ---------- */
+  --vl-leading-display: 1.02;
+  --vl-leading-heading: 1.12;
+  --vl-leading-body:    1.65;
+  --vl-leading-tight:   1.35;
+
+  /* ---------- Spacing (8pt-aligned, generous) ---------- */
+  --vl-space-1:   4px;
+  --vl-space-2:   8px;
+  --vl-space-3:   12px;
+  --vl-space-4:   16px;
+  --vl-space-5:   24px;
+  --vl-space-6:   32px;
+  --vl-space-7:   48px;
+  --vl-space-8:   64px;
+  --vl-space-9:   96px;
+  --vl-space-10:  128px;
+  --vl-space-11:  160px;     /* hero margins */
+
+  /* ---------- Page margins (print-style) ---------- */
+  --vl-margin-print:   72px;        /* ~0.75in for letter */
+  --vl-margin-print-x: 96px;
+  --vl-margin-screen:  clamp(24px, 6vw, 96px);
+
+  /* ---------- Radii — minimal. Editorial = sharp corners. ---------- */
+  --vl-radius-none:  0;
+  --vl-radius-xs:    1px;
+  --vl-radius-sm:    2px;     /* the maximum for most surfaces */
+  --vl-radius-pill:  999px;   /* only for tags / chips */
+
+  /* ---------- Shadows — subtle vignettes only, no drop shadows on UI ---------- */
+  --vl-shadow-vignette:    inset 0 0 120px rgba(10, 10, 10, 0.35);
+  --vl-shadow-vignette-sm: inset 0 0 60px rgba(10, 10, 10, 0.22);
+  --vl-shadow-image:       0 18px 48px -24px rgba(10, 10, 10, 0.45);
+  --vl-shadow-card:        0 1px 0 rgba(10, 10, 10, 0.04);  /* almost nothing */
+
+  /* ---------- Motion (restrained — fade and reveal, never bounce) ---------- */
+  --vl-ease:          cubic-bezier(0.32, 0.08, 0.24, 1);
+  --vl-ease-reveal:   cubic-bezier(0.16, 1, 0.3, 1);
+  --vl-dur-fast:      180ms;
+  --vl-dur-base:      320ms;
+  --vl-dur-slow:      640ms;
+  --vl-dur-cinema:    1200ms;   /* slow editorial reveals */
+}
+
+/* =========================================================
+   Semantic element styles — the recipe for "looks like Vera Lune"
+   Use these directly OR re-apply via class.
+   ========================================================= */
+
+.vl-page,
+body.vl {
+  background: var(--vl-bg-page);
+  color: var(--vl-fg-1);
+  font-family: var(--vl-sans);
+  font-weight: var(--vl-weight-sans-light);
+  font-size: var(--vl-body);
+  line-height: var(--vl-leading-body);
+  letter-spacing: var(--vl-track-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.vl-display {
+  font-family: var(--vl-serif);
+  font-weight: var(--vl-weight-serif-light);
+  font-size: var(--vl-display);
+  line-height: var(--vl-leading-display);
+  letter-spacing: var(--vl-track-display);
+  font-style: italic;        /* signature: italic serif display */
+}
+
+.vl-h1 {
+  font-family: var(--vl-serif);
+  font-weight: var(--vl-weight-serif-light);
+  font-size: var(--vl-h1);
+  line-height: var(--vl-leading-heading);
+  letter-spacing: var(--vl-track-heading);
+}
+
+.vl-h2 {
+  font-family: var(--vl-serif);
+  font-weight: var(--vl-weight-serif-regular);
+  font-size: var(--vl-h2);
+  line-height: var(--vl-leading-heading);
+  letter-spacing: var(--vl-track-heading);
+}
+
+.vl-h3 {
+  font-family: var(--vl-sans);
+  font-weight: var(--vl-weight-sans-regular);
+  font-size: var(--vl-h3);
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+.vl-eyebrow {
+  font-family: var(--vl-sans);
+  font-weight: var(--vl-weight-sans-regular);
+  font-size: var(--vl-eyebrow);
+  letter-spacing: var(--vl-track-eyebrow);
+  text-transform: uppercase;
+  color: var(--vl-fg-2);
+}
+
+.vl-eyebrow--gold {
+  color: var(--vl-gold);
+}
+
+.vl-smallcaps {
+  font-family: var(--vl-sans);
+  font-weight: var(--vl-weight-sans-regular);
+  font-size: var(--vl-caption);
+  letter-spacing: var(--vl-track-smallcaps);
+  text-transform: uppercase;
+}
+
+.vl-body {
+  font-family: var(--vl-sans);
+  font-weight: var(--vl-weight-sans-light);
+  font-size: var(--vl-body);
+  line-height: var(--vl-leading-body);
+  color: var(--vl-fg-2);
+}
+
+.vl-pullquote {
+  font-family: var(--vl-serif);
+  font-style: italic;
+  font-weight: var(--vl-weight-serif-light);
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 1.3;
+  letter-spacing: -0.005em;
+  color: var(--vl-fg-1);
+}
+
+.vl-caption {
+  font-family: var(--vl-sans);
+  font-weight: var(--vl-weight-sans-light);
+  font-size: var(--vl-caption);
+  letter-spacing: 0.06em;
+  color: var(--vl-fg-3);
+  text-transform: uppercase;
+}
+
+.vl-price {
+  font-family: var(--vl-serif);
+  font-weight: var(--vl-weight-serif-regular);
+  font-size: 28px;
+  letter-spacing: 0.01em;
+  color: var(--vl-gold);
+}
+
+/* ---------- The signature gold rule line ---------- */
+.vl-rule-gold {
+  display: block;
+  width: 56px;
+  height: var(--vl-rule-thin);
+  background: var(--vl-gold);
+  border: 0;
+}
+.vl-rule-gold--long  { width: 100%; }
+.vl-rule-gold--short { width: 32px; }
+
+.vl-rule-neutral {
+  display: block;
+  width: 100%;
+  height: var(--vl-rule-hairline);
+  background: var(--vl-rule-neutral);
+  border: 0;
+}
+
+/* ---------- Buttons — print-feel, never glossy ---------- */
+.vl-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 36px;
+  font-family: var(--vl-sans);
+  font-weight: var(--vl-weight-sans-regular);
+  font-size: 11px;
+  letter-spacing: var(--vl-track-button);
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: var(--vl-radius-none);
+  border: 1px solid currentColor;
+  cursor: pointer;
+  transition: color var(--vl-dur-base) var(--vl-ease),
+              background var(--vl-dur-base) var(--vl-ease),
+              border-color var(--vl-dur-base) var(--vl-ease);
+}
+.vl-btn--gold       { color: var(--vl-gold); background: transparent; }
+.vl-btn--gold:hover { color: var(--vl-black); background: var(--vl-gold); border-color: var(--vl-gold); }
+.vl-btn--dark       { color: var(--vl-black); background: transparent; }
+.vl-btn--dark:hover { color: var(--vl-white); background: var(--vl-black); }
+.vl-btn--light      { color: var(--vl-white); background: transparent; border-color: rgba(250,248,245,0.6); }
+.vl-btn--light:hover{ color: var(--vl-black); background: var(--vl-white); border-color: var(--vl-white); }
+
+/* ---------- Image vignette (the only "shadow" we use on imagery) ---------- */
+.vl-vignette { position: relative; }
+.vl-vignette::after {
+  content: '';
+  position: absolute; inset: 0;
+  box-shadow: var(--vl-shadow-vignette);
+  pointer-events: none;
+}
+
+/* ---------- Print page ---------- */
+@page {
+  size: letter;
+  margin: 0;
+}
+.vl-print-page {
+  width: 8.5in;
+  height: 11in;
+  background: var(--vl-bg-page);
+  page-break-after: always;
+  position: relative;
+  overflow: hidden;
+}
+.vl-print-page:last-child { page-break-after: auto; }
